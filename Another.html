@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="ano.css">
-<title>Data Structures & Algorithms Lab</title>
-<header>  
-  <div class="logo-group">
-       <div class="logo-image">
-      <img src="LOGO.jpg" alt="PGPC Logo"  width="60" height ="60" >
-  </div>
-  <div class="logo-text">
-        <h1>Padre Garcia Polytechnic College</h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="demo.css">
+  <script src="demo.js" defer></script>
+  <title>Data Structures &amp; Algorithms Lab</title>
+</head>
+<body>
+  <header>
+    <div class="topline">Interactive learning workspace</div>
+    <h1>Data Structures &amp; Algorithms</h1>
+    <p>Explore each concept using clickable cards. Enter your own values, run an operation, and see the result instantly.</p>
+  </header>
+  <main>
+    <div class="section-head">
+      <div>
+        <h2>Choose a topic</h2>
+        <p>Select a card to open its interactive demo.</p>
       </div>
-  </div>
-  <div>
-  <h1>Data Structures & Algorithms</h1>
-  </div>
-</header>
-
-<main>
-    
-</main>
+    </div>
+    <section class="cards" id="cards" aria-label="Data structure and algorithm options"></section>
+    <section class="workspace" id="workspace">
+      <div class="work-head">
+        <div>
+          <h2 id="workTitle">Array Operations</h2>
+          <p id="workDesc">Insert, delete, and search values by index.</p>
+        </div>
+        <span class="pill">READY TO RUN</span>
+      </div>
+      <div class="workspace-inner">
+        <div id="controls"></div>
+        <div>
+          <div class="result">
+            <h3>Output</h3>
+            <div id="output" class="empty">
+              <div>
+                <div class="big">⌁</div>
+                Choose an operation and run it to see the output here.
+              </div>
+            </div>
+          </div>
+          <div id="status" class="status">Tip: separate multiple integers with spaces or commas.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>&copy; 2026</footer>
+</body>
+</html>
